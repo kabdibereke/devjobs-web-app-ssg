@@ -1,1 +1,1 @@
-Next js, mock.api, framer motion, TS, SCSS
+Next js (SSG), mock.api, framer motion, TS, SCSS,
