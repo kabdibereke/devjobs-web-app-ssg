@@ -9,7 +9,7 @@ import Footer from '@/components/Footer/Footer';
 type Props = {}
 
 export const getStaticPaths:GetStaticPaths = async () => {
-const res = await fetch("https://64281ee346fd35eb7c4bfc31.mockapi.io/dev");
+const res = await fetch("https://devjobs-web-app-ssg-yzd2.vercel.app");
 const data = await res.json();
 
 const paths = data.map((items:IJobs) => {
@@ -25,7 +25,7 @@ return {
 };
 export const getStaticProps:GetStaticProps = async (context) => {
 	const {id} = context.params as ParsedUrlQuery;
-	const res = await fetch(`https://64281ee346fd35eb7c4bfc31.mockapi.io/dev/${id}`);
+	const res = await fetch(`https://devjobs-web-app-ssg-yzd2.vercel.app/${id}`);
 	const data = await res.json();
 
 	return {
