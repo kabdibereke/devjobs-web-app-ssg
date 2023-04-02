@@ -1,0 +1,24 @@
+.header {
+    background: url('../../assets/bg-pattern-header.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        cursor: pointer;
+    }
+}
+
+@media  (max-width: 1150px) {
+    .header {
+        background: url('../../assets/bg-pattern-header-mobile.svg');
+       
+    }
+  }

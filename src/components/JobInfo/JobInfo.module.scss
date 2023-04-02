@@ -1,0 +1,117 @@
+.wrapper {
+    max-width: 800px;
+    margin:  0 auto;
+    height: fit-content;
+    background-color: var(--background-color-elements);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 32px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .first {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 15px;
+                .dot {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 100%;
+                    background-color: var(--color-dark-grey);
+                }
+                .createdAt {
+                    color:  var(--color-dark-grey);
+                }
+                .contract {
+                    @extend .createdAt;
+                }
+                
+            }
+            .position {
+                color:  var(--color-text);
+                font-size: 28px;
+                line-height: 34px;
+                
+                width: 100%;
+            }
+            .country {
+        
+                font-weight: 700;
+                color:  var(--color-violet);
+            }
+        }
+    }
+    .descr {
+        margin-top: 32px;
+        color: var(--color-dark-grey);
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .requirements {
+        margin-top: 32px;
+        .title {
+            color:  var(--color-text);
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .list {
+           
+            margin: 0;
+            padding: 0;
+            padding-left: 15px;
+            margin-top: 20px;
+            color: var(--color-dark-grey);
+            font-size: 16px;
+            line-height: 26px;
+            li {
+                margin-top: 10px;
+            }
+        }
+        .list_number {
+            margin: 0;
+            padding: 0;
+            padding-left: 15px;
+            margin-top: 20px;
+            color: var(--color-dark-grey);
+            font-size: 16px;
+            line-height: 26px;
+            li {
+                margin-top: 10px;
+                height: 100%;
+                
+                &::marker {
+                    color: var(--color-violet);
+                    font-weight: 700;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .wrapper {
+        padding: 15px;
+        .header {
+            flex-direction: column;
+            align-items: center;
+            &_info {
+                
+    
+                .country {
+            
+                   
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+    }
+}

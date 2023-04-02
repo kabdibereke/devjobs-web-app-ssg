@@ -1,0 +1,19 @@
+.button {
+    width: fit-content;
+    height: 52px;
+    background-color:var(--color-violet);
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 16px 16px;
+    text-transform: capitalize;
+    color: var(--color-white);
+    &:hover {
+        background-color: var(--color-light-violet);
+        transition: 0.3s;
+    }
+    
+}
