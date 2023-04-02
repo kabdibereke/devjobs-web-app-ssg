@@ -7,7 +7,7 @@ import { IJobs, jobsProps } from '@/interface/interface';
 import { GetStaticProps } from 'next';
 
 export const getStaticProps:GetStaticProps = async () => {
-	const res = await fetch("https://devjobs-web-app-ssg-yzd2.vercel.app");
+	const res = await fetch("https://64281ee346fd35eb7c4bfc31.mockapi.io/dev");
 	const data = await res.json();
 
 	return {
